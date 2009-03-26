@@ -1,0 +1,4 @@
+$atomString = Get-Content D:\Deshev\Speaking\SofiaDev-PowerShell-Mar26\Scripts\atom.xml
+$atomString
+$atom = [xml] $atomString
+$atom.feed.entry[0].content.$("#text")
